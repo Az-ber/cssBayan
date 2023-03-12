@@ -1,6 +1,5 @@
 body{
     font-family: Arial, sans-serif;
-    font-size: 1.5rem;
     line-height: 1.5;
     margin: 1rem;
     font-weight: 800;
@@ -17,28 +16,34 @@ body{
     max-width: 100%;
     max-height: 100%;
     display: none;
+    width: 10rem;
+    height: 10rem;
 }
 
 .title{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     border-bottom: 1px solid #808080;
-    margin: 1rem 2rem 0 2rem;
+    margin: 1rem 4rem 0 4rem;
 }
 
 
 .css{
-    padding: 0 2rem;
+    padding: 0 4rem;
+    color: blue;
+    font-size: 1rem;
 }
 
 .css_item{
     border-bottom: 1px solid #808080;
-    padding: 2rem 0;
     cursor: pointer;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    flex-direction: column;
     flex-wrap: wrap;
+    align-items: center;
+    padding: 1rem;
 }
+
 
 .css_title{
     display: block;
@@ -50,24 +55,19 @@ body{
 }
 
 
-.x-mark{
-    display: none;
-    font-size: 3rem;
-}
-
-.plus{
-    font-size: 3rem;
-}
 
 .css_input:checked ~ .css_images{
     display: block;
 }
 
-.css_input:hover ~ .css_images{
-    display: block;
-    
+
+.css:hover{
+    color: black;
 }
 
 
+.css_input:hover ~ .css_images{
+    display: block;
+}
 
 
