@@ -1,0 +1,120 @@
+@media ( max-width: 1920px ){
+    body{
+        font-family: Arial, sans-serif;
+        line-height: 1.4;
+        margin: 1rem;
+        font-weight: 900;
+    }
+
+    .title{
+        font-size: 2rem;
+        border-bottom: 1px solid #808080;
+        margin: 1rem 4rem 0 4rem;
+        font-weight: 900;
+    }
+
+    .css{
+        padding: 0 4rem;
+        color: blue;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .css_item{
+        border-bottom: 1px solid #808080;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 1rem;
+        cursor: pointer;
+    }
+
+    .css_title{
+        display: block;
+        align-self: start;
+    }
+
+    .css_input{
+        width: 0;
+        height: 0;
+    }
+
+    .css_images{
+        max-width: 100%;
+        max-height: 100%;
+        display: none;
+        width: 18rem;
+        height: 18rem;
+        transition: all 2s ease;
+        transition-delay: 1s;
+    }
+
+    .css_input:checked ~ .css_images{
+        display: block;
+    }
+
+    .css:hover{
+        color: black;
+    }
+
+    .css_input:hover ~ .css_images{
+        display: block;
+    }
+}
+
+
+@media ( max-width: 820px ){
+    body{
+        line-height: 1.2;
+        font-weight: 800;
+    }
+
+    .title{
+        font-size: 1.5rem;
+        font-weight: 800;
+        margin: 1rem 2rem 0 2rem;
+    }
+
+    .css{
+        font-size: 1.2rem;
+        padding: 0 2rem;
+    }
+
+    .css_images{
+        width: 12rem;
+        height: 12rem; 
+    }
+}
+
+
+
+@media ( max-width: 320px ){
+    body{
+        line-height: 1;
+        font-weight: 700;
+    }
+
+    .title{
+        margin: 0.2rem;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .css{
+        font-size: 0.65rem;
+        padding: 0.3rem;
+        text-align: center;
+    }
+
+    .css_item{
+        padding: 0.3rem;
+        cursor: none;
+    }
+
+    .css_images{
+        width: 10rem;
+        height: 10rem;
+    }
+}
